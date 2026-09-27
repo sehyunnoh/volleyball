@@ -11,9 +11,12 @@ project to [Hoops Handbook](https://sehyunnoh.github.io/basketball/).
 
 ## Status
 
-All three phases complete: **81 skills** across all nine categories, each
-with levels 1-3 filled in. Every video was verified to exist and embed via
-the YouTube oEmbed endpoint before being committed.
+Shipped. All three phases complete: **81 skills** across all nine categories,
+each with levels 1-3 filled in. Every video was verified to exist and embed
+via the YouTube oEmbed endpoint before being committed. Deployed to GitHub
+Pages, verified in Google Search Console with a sitemap submitted, and
+checked on a real phone: mobile layout, PWA install, offline reading, and
+dark mode all confirmed working.
 
 See [intent.md](./intent.md) for goals, scope, and content structure, and
 [plan.md](./plan.md) for how this was ported from the basketball project.
