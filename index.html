@@ -11,6 +11,7 @@
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://sehyunnoh.github.io/volleyball/" />
+    <meta name="google-site-verification" content="b6ZUrFva2Rg41gdVhtstA3MdOOjZfrld8tBxLsiZI3g" />
 
     <!--
       Hash routing (see App.tsx) means every shared link resolves to this
@@ -27,6 +28,7 @@
     />
     <meta property="og:url" content="https://sehyunnoh.github.io/volleyball/" />
     <meta property="og:image" content="https://sehyunnoh.github.io/volleyball/icons/icon-512.png" />
+    <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Volleyball Handbook" />
     <meta
@@ -34,6 +36,29 @@
       content="A curated volleyball skills library. Categories, levels, and one hand-picked video per skill."
     />
     <meta name="twitter:image" content="https://sehyunnoh.github.io/volleyball/icons/icon-512.png" />
+
+    <!--
+      WebSite structured data (schema.org): tells search engines this is a
+      site, not an article, and opts into the sitelinks search box in Google
+      results. The SearchAction target is a hash-route URL — React Router's
+      useSearchParams reads the `q` after the `#`, so it works client-side
+      the same way sharing a search link already does.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Volleyball Handbook",
+        "url": "https://sehyunnoh.github.io/volleyball/",
+        "description": "A curated volleyball skills library. Categories, levels, and one hand-picked video per skill.",
+        "inLanguage": "en",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://sehyunnoh.github.io/volleyball/#/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
