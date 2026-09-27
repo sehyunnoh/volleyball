@@ -1,3 +1,303 @@
 import type { Skill } from '../../types'
 
-export const ATHLETICISM: Skill[] = []
+export const ATHLETICISM: Skill[] = [
+  {
+    id: 'dynamic-warmup',
+    title: 'Dynamic Warmup',
+    category: 'athleticism',
+    level: 1,
+    summary: 'A short moving routine that gets your body ready before you play.',
+    description:
+      'A dynamic warmup is a set of movements you do before playing that gradually raise your heart rate and loosen up your muscles. Instead of standing still and stretching, you keep moving through things like arm circles, leg swings, and light jogging. This wakes up the exact muscles you use for jumping, diving, and swinging your arm, so your body is ready before the ball ever gets hit. Skipping the warmup leaves your muscles cold and stiff for the first few plays, which is exactly when injuries happen.',
+    keyPoints: [
+      'Start with light jogging or jumping jacks',
+      'Add arm circles and leg swings',
+      'Do bodyweight lunges to open your hips',
+      "Keep moving the whole time, don't stand still",
+      'Finish right before you start playing',
+    ],
+    commonMistakes: [
+      'Skipping the warmup and going straight into hard jumping or hitting.',
+      'Holding still stretches instead of moving stretches before playing.',
+    ],
+    video: {
+      youtubeId: 'kzAZti_jcN4',
+      title: 'Make the Most of Practice with These Volleyball Specific Warm-Ups!',
+      channel: 'Championship Productions',
+    },
+    tags: {
+      space: ['Home', 'Open space', 'Practice court'],
+      solo: 'Solo',
+      equipment: ['Ball only'],
+      duration: '10 min',
+    },
+    relatedSkills: ['ready-position', 'landing-mechanics'],
+  },
+  {
+    id: 'ankle-stability',
+    title: 'Ankle Stability',
+    category: 'athleticism',
+    level: 1,
+    summary: 'Balance and strengthening moves that protect your ankles from rolling.',
+    description:
+      'Your ankles take a beating in volleyball because you land on them after almost every jump, and sometimes you land on another player\'s foot instead of the floor. Ankle stability exercises train the small muscles around your ankle to react fast and hold the joint steady when it lands wrong. Simple moves like balancing on one foot or slowly rising onto your toes build that strength over time. A stronger, steadier ankle is much less likely to roll or twist during a game.',
+    keyPoints: [
+      'Balance on one foot for 30 seconds',
+      'Rise slowly onto your toes and lower',
+      'Practice on both feet, not just one',
+      'Try balancing with your eyes closed',
+      'Stop if you feel sharp pain',
+    ],
+    commonMistakes: [
+      'Only training the ankle that already feels strong.',
+      'Rushing through balance drills instead of holding them steady.',
+    ],
+    video: {
+      youtubeId: 'xbRAuSNZqmc',
+      title: 'Volleyball Injury Prevention Part I: The Ankle',
+      channel: 'Aethos',
+    },
+    tags: {
+      space: ['Home'],
+      solo: 'Solo',
+      equipment: ['Ball only'],
+      duration: '5 min',
+    },
+    relatedSkills: ['landing-mechanics', 'block-footwork'],
+  },
+  {
+    id: 'landing-mechanics',
+    title: 'Landing Mechanics',
+    category: 'athleticism',
+    level: 1,
+    summary: 'How to land safely after any jump, with bent knees and balance.',
+    description:
+      'Every jump in volleyball ends with a landing, and how you land matters as much as how high you jumped. Good landing mechanics mean coming down with your knees bent, your weight balanced over both feet, and your chest leaning slightly forward, like you are sitting into a chair. Landing stiff-legged or off balance sends all the force straight into your knees and ankles instead of spreading it out. This one habit protects your joints under every jumping skill you will ever learn.',
+    keyPoints: [
+      'Bend your knees on every landing',
+      'Land on both feet when you can',
+      'Keep your chest slightly forward',
+      'Land quietly, not with a hard thud',
+      'Absorb the landing with your legs, not your back',
+    ],
+    commonMistakes: [
+      'Landing with straight, locked knees.',
+      'Landing hard on one foot when both feet are possible.',
+    ],
+    video: {
+      youtubeId: 'ttMeVzsOMBw',
+      title: 'AVCA Video Tip of the Week: Jumping & Landing Mechanics',
+      channel: 'AVCA Volleyball',
+    },
+    tags: {
+      space: ['Home', 'Open space', 'Practice court'],
+      solo: 'Solo',
+      equipment: ['Ball only'],
+      duration: '10 min',
+    },
+    prerequisites: ['dynamic-warmup'],
+    relatedSkills: [
+      'ankle-stability',
+      'vertical-jump-training',
+      'approach-and-hit',
+      'blocking-jump-timing',
+      'jump-float-serve',
+      'jump-spin-serve',
+    ],
+  },
+  {
+    id: 'vertical-jump-training',
+    title: 'Vertical Jump Training',
+    category: 'athleticism',
+    level: 2,
+    summary: 'Bodyweight exercises that build the jump height you need to attack and block.',
+    description:
+      'Vertical jump training uses bodyweight exercises like squat jumps and step-ups to build the leg power behind a high attack or a tall block. You do a controlled movement, like squatting down and jumping straight up, then land soft and reset before the next rep. Building jump height happens slowly over weeks of consistent practice, not overnight. Always land using good landing mechanics, since more powerful jumps put more force through your knees and ankles.',
+    keyPoints: [
+      'Squat jumps: squat, then jump straight up',
+      'Step-ups build one-leg power for each leg',
+      "Rest between sets, don't rush",
+      'Land soft every single time',
+      'Progress happens over weeks, not days',
+    ],
+    commonMistakes: [
+      'Doing too many reps with sloppy landings.',
+      'Skipping rest between sets and losing good form.',
+    ],
+    video: {
+      youtubeId: 'uS5rKkgD5BI',
+      title: '3 Exercises to Improve Your Vertical Jump in Volleyball',
+      channel: 'Jiri Popelka | VolleyCountry',
+    },
+    tags: {
+      space: ['Home', 'Open space'],
+      solo: 'Solo',
+      equipment: ['Ball only'],
+      duration: '15 min+',
+    },
+    prerequisites: ['landing-mechanics'],
+    relatedSkills: ['blocking-jump-timing', 'approach-and-hit'],
+  },
+  {
+    id: 'lateral-agility',
+    title: 'Lateral Agility',
+    category: 'athleticism',
+    level: 2,
+    summary: 'Quick side-to-side footwork drills that build fast sideways movement.',
+    description:
+      'Lateral agility is how quickly you can move sideways, which matters every time a blocker slides down the net or a defender shifts to cover open court. Ladder and cone drills break sideways movement into small, repeatable steps so your feet learn to move fast without crossing over or tripping. Short bursts of quick feet, done often, build speed better than a few long sessions. This is the footwork underneath both blocking and defense.',
+    keyPoints: [
+      'Stay low with knees bent throughout',
+      'Keep steps quick and light, not heavy',
+      "Don't cross your feet while shuffling",
+      'Keep your eyes up, not on your feet',
+      'Practice both directions equally',
+    ],
+    commonMistakes: [
+      'Standing too tall while shuffling sideways.',
+      "Looking down at your feet instead of the court.",
+    ],
+    video: {
+      youtubeId: 'VFJn-0MXkYo',
+      title: 'Volleyball Agility Ladder Drills - Improved Footwork for Hitters',
+      channel: 'Coach Chijo',
+    },
+    tags: {
+      space: ['Home', 'Open space', 'Practice court'],
+      solo: 'Solo',
+      equipment: ['Cones'],
+      duration: '10 min',
+    },
+    prerequisites: ['dynamic-warmup'],
+    relatedSkills: ['shuffle-step', 'block-footwork', 'reactive-agility'],
+  },
+  {
+    id: 'shoulder-care',
+    title: 'Shoulder Care',
+    category: 'athleticism',
+    level: 2,
+    summary: 'Mobility and light strength work that protects the shoulder you swing with.',
+    description:
+      'Serving and attacking both use the same overhead swinging motion again and again, which puts repeated stress on the shoulder. Shoulder care means moving the joint through its full range with arm circles and gentle stretches, plus light strengthening for the muscles that hold the shoulder in place. A little of this work, done regularly, keeps the shoulder healthy enough to keep swinging hard all season. Any sharp pain in the shoulder is a sign to stop and rest, not push through.',
+    keyPoints: [
+      'Circle your arms through their full range',
+      'Stretch the front of the shoulder gently',
+      'Add light band or bodyweight strengthening',
+      'Do this after playing, not instead of',
+      'Stop for sharp pain, not normal tiredness',
+    ],
+    commonMistakes: [
+      'Only stretching and never strengthening the shoulder.',
+      'Ignoring sharp pain and continuing to swing hard.',
+    ],
+    video: {
+      youtubeId: '8UQKz-wgHUU',
+      title: 'Volleyball Shoulder Care Series 3 | Strengthening Exercises',
+      channel: 'Reid Hall',
+    },
+    tags: {
+      space: ['Home'],
+      solo: 'Solo',
+      equipment: ['Ball only'],
+      duration: '10 min',
+    },
+    relatedSkills: ['arm-swing-mechanics', 'standing-float-serve', 'recovery-and-load-management'],
+  },
+  {
+    id: 'reactive-agility',
+    title: 'Reactive Agility',
+    category: 'athleticism',
+    level: 3,
+    summary: 'Agility drills where a partner gives a surprise signal you react to.',
+    description:
+      'Reactive agility takes the footwork from lateral agility and adds the unpredictable part of a real game. Instead of moving through a pattern you already know, a partner points a direction, calls out a cue, or drops a ball, and you react as fast as you can. This trains your body to read a signal and move immediately, which is exactly what happens when you read a hitter or a setter mid-play. It only works if the cues are truly unpredictable.',
+    keyPoints: [
+      'Partner gives a random, unplanned cue',
+      "React immediately, don't guess ahead of time",
+      'Stay in ready position between reps',
+      'Move first, then find the ball',
+      "Mix up the cues so you can't predict them",
+    ],
+    commonMistakes: [
+      'Anticipating the cue instead of truly reacting to it.',
+      'Standing flat-footed while waiting for the signal.',
+    ],
+    video: {
+      youtubeId: 'UbjQ43L_Tk8',
+      title: '3 Partner Reaction Drills for Defense',
+      channel: 'Volleyball University',
+    },
+    tags: {
+      space: ['Home', 'Open space', 'Practice court'],
+      solo: 'Partner',
+      equipment: ['Ball only'],
+      duration: '10 min',
+    },
+    prerequisites: ['lateral-agility'],
+    relatedSkills: ['reading-the-hitter', 'reading-the-setter', 'reading-tempo'],
+  },
+  {
+    id: 'core-and-power-transfer',
+    title: 'Core and Power Transfer',
+    category: 'athleticism',
+    level: 3,
+    summary: 'Core exercises that connect your legs to your arm swing for more power.',
+    description:
+      'A hard hit or serve does not come from the arm alone. Power starts in your legs, travels through a strong, stable core, and finally reaches your arm at contact. If your core is weak, that power leaks out along the way and your swing feels weaker than your jump should allow. Simple core exercises like planks and controlled twisting movements build the stable middle that lets your whole body work together on every swing.',
+    keyPoints: [
+      'Power starts in the legs, not the arm',
+      'A stable core connects legs to arm',
+      'Planks build core endurance',
+      'Controlled twists build rotational power',
+      'Keep your core braced during the swing',
+    ],
+    commonMistakes: [
+      'Trying to generate power with the arm alone.',
+      'Rushing through core exercises with poor form.',
+    ],
+    video: {
+      youtubeId: 'op8QXVKUpws',
+      title: 'Core Exercises to Spike a Volleyball Harder | 3 Exercises to Maximize Power Production',
+      channel: 'Reid Hall',
+    },
+    tags: {
+      space: ['Home'],
+      solo: 'Solo',
+      equipment: ['Ball only'],
+      duration: '10 min',
+    },
+    relatedSkills: ['arm-swing-mechanics', 'standing-attack'],
+  },
+  {
+    id: 'recovery-and-load-management',
+    title: 'Recovery Basics',
+    category: 'athleticism',
+    level: 3,
+    summary: 'Rest, sleep, and knowing when soreness is normal versus a real injury.',
+    description:
+      'Training hard only works if you also give your body time to recover, which means enough sleep, rest days between hard sessions, and easy movement after a tough tournament. Normal muscle soreness shows up a day or two after playing, feels dull and even on both sides, and fades within a few days. A real injury usually feels sharp, shows up in one specific spot, and does not get better with rest. Learning that difference, and speaking up when something feels wrong, keeps small problems from turning into big ones.',
+    keyPoints: [
+      'Sleep enough hours every single night',
+      'Take rest days between hard sessions',
+      'Normal soreness is dull and fades in days',
+      'Sharp, one-spot pain needs a break',
+      'Tell an adult if something feels wrong',
+    ],
+    commonMistakes: [
+      'Playing through sharp, localized pain instead of resting.',
+      'Treating rest days as optional when tired.',
+    ],
+    video: {
+      youtubeId: 'FRSkJmBsr7g',
+      title: 'Recovery Exercises to Reduce Soreness for After Volleyball Tournament',
+      channel: 'PowerCore360',
+    },
+    tags: {
+      space: ['Home'],
+      solo: 'Solo',
+      equipment: ['Ball only'],
+      duration: '10 min',
+    },
+    relatedSkills: ['shoulder-care', 'ankle-stability'],
+  },
+]

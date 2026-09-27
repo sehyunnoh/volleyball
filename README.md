@@ -7,16 +7,13 @@ and one hand-picked YouTube video.
 Built for a dad who never learned volleyball, and his two kids — the sibling
 project to [Hoops Handbook](https://sehyunnoh.github.io/basketball/).
 
-**Live site:** https://sehyunnoh.github.io/volleyball/ _(deploys from `main`,
-once the repo is pushed)_
+**Live site:** https://sehyunnoh.github.io/volleyball/ _(deploys from `main`)_
 
 ## Status
 
-Phases 1 and 2 complete: **54 skills** across Fundamentals, Serving, Passing,
-Setting, Attacking, and Blocking, each with levels 1-3 filled in. Every video
-was verified to exist and embed via the YouTube oEmbed endpoint before being
-committed. All nine categories are defined (`src/data/categories.ts`); Phase 3
-(Defense, Strategy, Athleticism) is still empty.
+All three phases complete: **81 skills** across all nine categories, each
+with levels 1-3 filled in. Every video was verified to exist and embed via
+the YouTube oEmbed endpoint before being committed.
 
 See [intent.md](./intent.md) for goals, scope, and content structure, and
 [plan.md](./plan.md) for how this was ported from the basketball project.
