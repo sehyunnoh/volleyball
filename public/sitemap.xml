@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Hash routing (see src/App.tsx) means /skill/*, /category/* etc. all live
+  under this one served URL — there's nothing else to list here without a
+  routing change. See README.md for the tradeoff.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://sehyunnoh.github.io/volleyball/</loc>
+  </url>
+</urlset>

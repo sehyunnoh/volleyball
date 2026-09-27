@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <title>Volleyball Handbook</title>
+    <meta
+      name="description"
+      content="A curated volleyball skills library. Categories, levels, and one hand-picked video per skill."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://sehyunnoh.github.io/volleyball/" />
+
+    <!--
+      Hash routing (see App.tsx) means every shared link resolves to this
+      same index.html, so these can't vary per skill/category — they're
+      what link previews (Slack, iMessage, Twitter/X) show no matter which
+      page someone shares.
+    -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Volleyball Handbook" />
+    <meta property="og:title" content="Volleyball Handbook" />
+    <meta
+      property="og:description"
+      content="A curated volleyball skills library. Categories, levels, and one hand-picked video per skill."
+    />
+    <meta property="og:url" content="https://sehyunnoh.github.io/volleyball/" />
+    <meta property="og:image" content="https://sehyunnoh.github.io/volleyball/icons/icon-512.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Volleyball Handbook" />
+    <meta
+      name="twitter:description"
+      content="A curated volleyball skills library. Categories, levels, and one hand-picked video per skill."
+    />
+    <meta name="twitter:image" content="https://sehyunnoh.github.io/volleyball/icons/icon-512.png" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121214" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- iOS "Add to Home Screen" -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Volleyball" />
+
+    <link rel="preconnect" href="https://i.ytimg.com" />
+
+    <!--
+      GoatCounter: cookie-less, no personal data, nothing to consent to.
+      `no_onload` hands counting to src/lib/analytics.ts, which is what makes
+      the hash routes show up as separate pages. Site code is dedicated to
+      this project (https://volleyball.goatcounter.com/) — not shared with
+      the basketball project.
+    -->
+    <script>
+      window.goatcounter = { no_onload: true }
+    </script>
+    <script
+      data-goatcounter="https://volleyball.goatcounter.com/count"
+      async
+      src="https://gc.zgo.at/count.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
