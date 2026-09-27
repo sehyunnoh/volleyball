@@ -45,8 +45,9 @@ Level is shown as a three-segment meter rather than a colour.
 
 The PWA/app icons (`public/icons/`, `public/apple-touch-icon.png`,
 `public/favicon.svg`) follow the same construction as basketball's — a dark
-ink background, a gradient sphere, and simple seam lines — just in Court Blue
-with a volleyball's curved-panel seams instead of a basketball's meridians.
+ink background and a gradient sphere — but the seam pattern is a trefoil (three
+equal arcs meeting at the center) instead of basketball's meridian-and-equator
+lines, so the two marks don't get confused for each other at a glance.
 
 ```bash
 npm install
